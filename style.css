@@ -212,8 +212,9 @@ h4 {
     margin: var(--MARGIN);
 }
 
-.consultants {
-    font-family: Lato;
+.consultants, .services {
+    font-family: sans-serif;
+    font-weight: normal;
 }
 
 .fourth-container img {
