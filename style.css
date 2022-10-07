@@ -31,7 +31,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-flow: column nowrap;
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 1rem;
     overflow-x: hidden;
 }
@@ -304,6 +304,9 @@ footer {
     .tc-h3, .fc-h3 {
         display: block;
     }
+    body {
+        font-size: 1.2rem;
+    }
 }
 
 @media screen and (min-width: 768px) {
@@ -326,6 +329,9 @@ footer {
     }
     .second-container {
         display: flow-root;
+    }
+    body {
+        font-size: 1.2rem;
     }
 }
 
@@ -358,6 +364,9 @@ footer {
     .second-container {
         display: flow-root;
     }
+    body {
+        font-size: 1.2rem;
+    }
 }
 @media screen and (min-width: 1200px) {
     .services, .consultants {
@@ -381,5 +390,8 @@ footer {
     }
     .second-container {
         display: flow-root;
+    }
+    body {
+        font-size: 1.2rem;
     }
 }
