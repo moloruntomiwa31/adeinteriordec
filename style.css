@@ -1,0 +1,384 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300&family=Lato&family=Martel:wght@600&family=Montserrat:wght@200&family=Raleway:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    /* color */
+    --TPCOLOR: gray;
+    --HEADER-BGCOLOR: rgb(2, 2, 2);
+    --HEADER-COLOR: white;
+    --LINK-HOVER: red;
+
+    /* borders */
+    --BORDERCOLOR: black;
+    --BORDER: 1px solid var(--BORDERCOLOR);
+
+    /* padding */
+    --PADDING-TB: 0.10rem;
+    --PADDING-LR: 1rem;
+
+    /* margin */
+    --MARGIN: 20px;
+}
+
+html{scroll-behavior: smooth;}
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-flow: column nowrap;
+    font-size: 1.2rem;
+    margin: 1rem;
+    overflow-x: hidden;
+}
+
+header {
+    color: var(--HEADER-BGCOLOR);
+    padding: var(--PADDING-TB) var(--PADDING-LR);
+}
+
+.menu-icon {
+    max-width: 10%;
+    height: auto;
+}
+
+.menu {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+h1 {
+    font-family: Comfortaa;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.svg-bar {
+    float: right;
+    cursor: pointer;
+}
+
+nav {
+    float: right;
+    transform-origin: top center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav li {
+    padding: 0.35rem;
+}
+
+nav a {
+    text-decoration: none;
+    color: var(--HEADER-BGCOLOR);
+    font-family: Montserrat, sans-serif;
+}
+
+nav :is(a:hover, a:focus) {
+    color: var(--LINK-HOVER);
+    transform: scale(1.2);
+}
+
+.active {
+    background-color: burlywood;
+    width: 30px;
+    padding: 0.2rem;
+    border-radius: 2px;
+}
+
+.first-container {
+    background-image: linear-gradient(rgba(7, 2, 27, 0.486), rgb(47, 47, 54)), url("dec2 pexels.jpeg");
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+    margin: var(--MARGIN);
+    padding: 20px;
+    color: white;
+}
+
+
+.fc-h2 {
+    font-family: Raleway;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+hr {
+    height: 5px;
+    width: 20%;
+    border: none;
+    background-color: burlywood;
+    margin: 2px;
+}
+
+.second-container, .third-container, .tc-h3, .fc-h3 {
+    font-family: Lato;
+    margin: var(--MARGIN);
+}
+
+.second-container {
+    width: 100%;
+    height: auto;
+}
+
+.sc-image {
+    display: block;
+    width: 80%;
+    height: auto;
+}
+
+h3, figcaption {
+    font-weight: bold;
+    margin-bottom: 15px;
+    margin-top: 5px;
+    font-family: Lato;
+}
+
+.sc-button, .training-button, .sales-button, .form-button, .tc-button {
+    padding: 10px;
+    font-size: 1.2rem;
+    margin: 10px 10px;
+    border: none;
+    background-color: bisque;
+    cursor: pointer;
+}
+
+.sc-button:hover,
+.sc-button:focus,
+.training-button:hover,
+.training-button:focus,
+.sales-button:hover,
+.sales-button:focus,
+.form-button:hover,
+.form-button:focus,
+.tc-button:hover,
+.tc-button:focus {
+    color: rgb(245, 177, 94);
+    background-image: linear-gradient(rgba(7, 2, 27, 0.486), rgb(47, 47, 54));
+}
+
+article figure img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+.third-container, fourth-container, .conatct-add {
+    display: flex;
+    flex-flow: column nowrap;
+    width: min(100%, 300px);
+}
+
+article figcaption,
+.third-container p,
+.fourth-container p{
+    text-align: center;
+}
+
+article p {
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-family: Martel, Autography;
+    font-size: 1.3rem;
+    color: whitesmoke;
+}
+
+.training-ad, .sales-ad {
+    min-width: 300px;
+    height: auto;
+    background-color: rgb(155, 106, 34);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Lato;
+    padding: 10px;
+    margin: var(--MARGIN);
+}
+
+.consultants {
+    font-family: Lato;
+}
+
+.fourth-container img {
+    min-width: 70%;
+}
+
+.conatct-add {
+    width: 100%;
+}
+
+form, .address {
+    margin: var(--MARGIN);
+}
+
+fieldset  {
+    border: none;
+    font-family: Comfortaa;
+}
+
+.main-p {
+    margin: 1rem 0;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin: 10px;
+}
+
+.form-button {
+    margin: 10px;
+    border-radius: 7px 20px;
+}
+
+legend {
+    position: absolute;
+    left: -1000px;
+}
+
+.form-input, .form-textarea {
+    padding: 0.5rem;
+    margin: 5px; 
+    border: 1px solid black;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.address {
+    margin-left: 20px;
+}
+
+.form-fig {
+    display: inline;
+}
+
+.top:any-link {
+    color: bisque;
+    position: absolute;
+    bottom: 0;
+    right: 50px;
+}
+
+footer {
+    color: white;
+    background-color: rgb(10, 10, 20);
+    text-align: center;
+    font-family: Raleway;
+    padding: 10px;
+    position: relative;
+}
+
+.footer-hr {
+    background-color: bisque;
+    width: 100%; 
+    height: 2px;
+}
+
+@media screen and (min-width: 576px) {
+    .services, .consultants {
+        display: flex;
+        flex-flow: row nowrap;
+        gap: 0.5rem;
+    }
+    .third-container, .fourth-container {
+        width: min(100%, 280px);
+    }
+    .tc-h3, .fc-h3 {
+        display: block;
+    }
+}
+
+@media screen and (min-width: 768px) {
+    .services, .consultants {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0.5rem;
+    }
+    .third-container, .fourth-container {
+        width: min(100%, 280px);
+        gap: 0.5rem;
+    }
+    .tc-h3, .fc-h3 {
+        display: block;
+    }
+    .sc-image {
+        width: 50%;
+        float: right;
+        margin-right: 1rem;
+    }
+    .second-container {
+        display: flow-root;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .services, .consultants {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0.5rem;
+    }
+    .third-container, .fourth-container{
+        width: min(100%, 300px);
+        gap: 0.5rem;
+    }
+    .tc-h3 {
+        display: block;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    .sc-image {
+        width: 50%;
+        float: right;
+        margin-right: 1rem;
+    }
+
+    .consultants {
+        width: 100%;
+    }
+    .second-container {
+        display: flow-root;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .services, .consultants {
+        display: flex;
+        flex-flow: row nowrap;
+        margin: 0.5rem;
+    }
+    .third-container, .fourth-container {
+        width: min(calc(35% - 1rem), 612px);
+    }
+    .tc-h3, .fc-h3 {
+        display: block;
+    }
+    h4 {
+        font-size: 1.3rem;
+    }
+    .sc-image {
+        width: auto;
+        float: right;
+        margin-right: 1rem;
+    }
+    .second-container {
+        display: flow-root;
+    }
+}
